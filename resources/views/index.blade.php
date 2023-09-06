@@ -101,8 +101,10 @@
                                 <li><span>Email</span> DexterS0202@gmail.com</li>
                                 <li><span>Website</span> DexterSkudd.com</li>
                             </ul>
-                            <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a>
-                            <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran" class="default-btn">Presentation Video<i class="ti-control-play"></i></a>
+                            <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
+                            <a href="img/RickRoll.mp4" class="default-btn">Presentation Video ( Embarrassing ) <i class="ti-control-play img-popup"></i></a>
+
+                            <!-- <a class="img-popup" href="img/port-3.jpg">Design Studio<span>Branding</span></a> -->
                         </div>
                     </div>
                     <div class="col-md-5 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
