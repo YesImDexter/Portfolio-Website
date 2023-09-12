@@ -16,10 +16,6 @@
     word-wrap: break-word;
 }
 
-html {
-    overflow-x: hidden;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 15px;
@@ -29,7 +25,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #292929;
-
 }
 
 p {
@@ -657,7 +652,7 @@ h6 {
 }
 
 @media (hover: none) {
-        .services-item {
+    .services-item {
         padding: 40px;
         position: relative;
         background-color: transparent;
@@ -1161,7 +1156,18 @@ footer p a {
     }
 }
 
+
 @media screen and (max-width: 767px) {
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
+
     .section-title {
         text-align: left;
     }
