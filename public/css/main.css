@@ -138,9 +138,9 @@ h6 {
 /* ======= Padding Styles  ======= */
 
 .section-title {
+    padding-top: 0;
     text-align: center;
 }
-
 
 .section-padding {
     padding: 50px 0;
@@ -377,9 +377,9 @@ h6 {
 }
 
 /* ==========================================================================
-   Hero Section
+   Home Section
    ========================================================================== */
-.hero-section {
+.home-section {
     background-image: url(../img/hero-bg.png);
     background-repeat: no-repeat;
     background-position: center center;
@@ -389,40 +389,46 @@ h6 {
     position: relative;
 }
 
-.hero-content h4 {
+.home-content h4 {
     font-size: 30px;
 }
 
-.hero-content h1 {
+.home-content h1 {
     font-size: 50px;
 }
 
-.hero-content h1 {
+.home-content h1 {
     text-transform: uppercase;
 }
 
-.hero-content h2 {
+.home-content h2 {
     font-size: 40px;
 }
 
-.hero-content h2 span {
+.home-content h2 span {
     color: #22A39F;
 }
 
-.hero-social {
+.home-social {
     position: absolute;
     width: auto;
     height: auto;
-    right: 80px;
+    right: 40px;
     top: 50%;
     transform: translateY(-50%);
-    margin: 0;
     font-size: 30px;
 }
 
-.hero-social li {
+.home-social li {
+    text-align: center;
+    color: #fff;
     line-height: 35px;
-    margin: 10px;
+    margin: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.home-social li:hover{
+    transform: scale(1.3);
 }
 
 /* ==========================================================================
@@ -614,83 +620,8 @@ h6 {
     cursor: pointer;
 }
 
-@media (hover: hover) {
-    .services-item {
-        padding: 40px;
-        position: relative;
-        background-color: transparent;
-        top: 0;
-        transition: all 0.7s ease-in-out;
-    }
-
-    .services-item:hover {
-        background-color: #222;
-        top: -20px;
-        transition: all 0.7s ease-in-out;
-    }
-
-    .services-item .dots {
-        background-image: url(../img/doted-pattern.png);
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        right: -50px;
-        bottom: -50px;
-        opacity: 0.5;
-        visibility: hidden;
-        opacity: 0;
-        display: block;
-        transition: all 0.7s ease-in-out;
-        z-index: -1;
-    }
-
-    .services-item:hover .dots {
-        visibility: visible;
-        opacity: 0.5;
-        transition: all 0.7s ease-in-out;
-    }
-}
-
-@media (hover: none) {
-    .services-item {
-        padding: 40px;
-        position: relative;
-        background-color: transparent;
-        top: 0;
-        transition: all 0.7s ease-in-out;
-    }
-
-    .services-item:hover {
-        background-color: #222;
-        top: -20px;
-        transition: all 0.7s ease-in-out;
-    }
-
-    .services-item .dots {
-        background-image: url(../img/doted-pattern.png);
-        position: absolute;
-        width: 200px;
-        height: 200px;
-        right: -50px;
-        bottom: -50px;
-        opacity: 0.5;
-        visibility: hidden;
-        opacity: 0;
-        display: block;
-        transition: all 0.7s ease-in-out;
-        z-index: -1;
-    }
-
-    .services-item:hover .dots {
-        visibility: visible;
-        opacity: 0.5;
-        transition: all 0.7s ease-in-out;
-    }
-}
-
 .services-item {
     padding: 40px;
-    position: relative;
     background-color: transparent;
     top: 0;
     transition: all 0.7s ease-in-out;
@@ -1159,17 +1090,12 @@ footer p a {
 
 @media screen and (max-width: 767px) {
 
-    html,
-    body {
-        overflow-x: hidden;
-    }
-
-    body {
-        position: relative
-    }
-
     .section-title {
-        text-align: left;
+        padding-top: 50px;
+    }
+
+    .section-padding {
+        padding: 0 0;
     }
 
     .row {
@@ -1180,8 +1106,9 @@ footer p a {
         padding: 15px;
     }
 
+    /* ADDED PADDING TO TITLES INSTEAD, 50px */
     .section-padding {
-        padding: 60px 0;
+        padding: 0 0;
     }
 
     .dl-side-content>.logo img {
@@ -1201,17 +1128,17 @@ footer p a {
         display: none;
     }
 
-    .hero-social {
+    .home-social {
         position: inherit;
         left: inherit;
         top: inherit;
         transform: translateY(0);
         text-align: center;
         width: 100%;
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
-    .hero-social li {
+    .home-social li {
         display: inline-block;
         margin: 0 10px;
     }

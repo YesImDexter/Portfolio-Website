@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Dexter Skudd's Portfolio">
-    <meta name="author" content="DynamicLayers">
+    <meta name="author" content="TEST PORTFOLIO">
 
     <title>Dexter Skudd</title>
 
@@ -23,7 +23,6 @@
 </head>
 
 <body>
-
     <div class="site-preloader-wrap">
         <div class="spinner"></div>
     </div>
@@ -41,12 +40,15 @@
             <nav class="dl-menu-fixed">
                 <ul>
                     <li><a href="#home" data-scroll-nav="0">Home</a></li>
-                    <li><a href="#services" data-scroll-nav="1">About Me</a></li>
-                    <li><a href="#about" data-scroll-nav="2">Resume</a></li>
-                    <li><a href="#services" data-scroll-nav="3">Services</a></li>
-                    <li><a href="#projects" data-scroll-nav="4">Projects</a></li>
-                    <li><a href="#reviews" data-scroll-nav="5">Reviews</a></li>
-                    <li><a href="#contact" data-scroll-nav="6">Contact</a></li>
+                    <li><a href="#about" data-scroll-nav="1">About Me</a></li>
+                    <li><a href="#education" data-scroll-nav="2">Education</a></li>
+                    <li><a href="#experience" data-scroll-nav="3">Experience</a></li>
+                    <li><a href="#skill" data-scroll-nav="4">Skills</a></li>
+                    <li><a href="#software" data-scroll-nav="5">Software</a></li>
+                    <li><a href="#service" data-scroll-nav="6">Services</a></li>
+                    <li><a href="#project" data-scroll-nav="7"> Projects</a></li>
+                    <li><a href="#review" data-scroll-nav="8">Reviews</a></li>
+                    <li><a href="#contact" data-scroll-nav="9">Contact Me</a></li>
                 </ul>
             </nav>
         </div>
@@ -59,26 +61,27 @@
             </div>
         </div><!-- /.content-lines-wrapper -->
 
-        <header class="hero-section d-flex align-items-center bd-bottom" data-scroll-index="0">
+        <header id="home" class="home-section d-flex align-items-center bd-bottom" data-scroll-index="0">
             <div class="container">
-                <div class="hero-content text-center">
+                <div class="home-content text-center">
                     <h4>Hello! My name is</h4>
                     <h1>Dexter Skudd</h1>
                     <h2>I'm A <span class="typed"></span></h2>
+
+                    <ul class="home-social">
+                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                        <li><a href="#"><i class="ti-github"></i></a></li>
+                    </ul>
                 </div>
-                <ul class="hero-social">
-                    <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                    <li><a href="#"><i class="ti-github"></i></a></li>
-                </ul>
             </div>
-        </header><!-- /.hero-section -->
+        </header><!-- /.home-section -->
 
         <section id="about" class="about-section section-padding bd-bottom" data-scroll-index="1">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-7 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
                         <div class="about-content">
-                            <h2 class="section-title" >Let Me Introduce Myself.</h2>
+                            <h2 class="section-title">Let Me Introduce Myself.</h2>
                             <p>Welcome to my portfolio website! I'm Dexter Skudd, a passionate programmer with a deep love for coding and a relentless curiosity for emerging web technologies. I thrive on the excitement of constantly learning and expanding my skill set. My journey in web development has led me to explore and master frameworks like Codeigniter 4 and Laravel, and I'm always eager to take on new challenges and push the boundaries of what's possible in the digital world.</p>
                             <ul class="profile-info">
                                 <li><span>Full Name</span> Dexter Skudd Anak John Rizal </li>
@@ -101,12 +104,12 @@
                     </div>
                 </div>
             </div>
-        </section><!-- /.about-section -->
+        </section>
 
-        <section id="resume" class="resume-section section-padding bd-bottom" data-scroll-index="2">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+        <div class="container">
+            <div class="row">
+                <div id="education" class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms" data-scroll-index="2">
+                    <section class="section-padding bd-bottom">
                         <div class="section-heading mb-40">
                             <h2 class="section-title">Education Background</h2>
                         </div>
@@ -117,17 +120,18 @@
                                     <span>June 2020 - June 2023</span>
                                 </div>
                                 <div class="exp-content">
-                                    <h4>Politeknik Kuching Sarawak. <span>Diploma in Information Technology ( Digital Technology ) </span></h4>
+                                    <h4>Politeknik Kuching Sarawak. <span>Diploma in Information Technology </span></h4>
                                     <p>Politeknik Kuching Sarawak holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
                                 </div>
                             </li>
-
                         </ul>
-                    </div>
+                    </section><!-- /.Education-section -->
+                </div>
 
-                    <div class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <div id="experience" class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms" data-scroll-index="3">
+                    <section class="section-padding bd-bottom">
                         <div class="section-heading mb-40">
-                            <h2 class="section-title" >Working Experience</h2>
+                            <h2 class="section-title">Working Experience</h2>
                         </div>
                         <ul class="exp-list">
                             <li>
@@ -151,19 +155,19 @@
                                 </div>
                             </li>
                         </ul>
-                    </div>
+                    </section><!-- /.Experience-section -->
                 </div>
             </div>
-        </section><!-- /.resume-section -->
+        </div>
 
-        <section id="resume" class="resume-section section-padding bd-bottom" data-scroll-index="2">
-            <div class="container">
-                <div class="row">
-                    <!-- SKILL BAR -->
-                    <div class="col-md-6 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+        <div class="container">
+            <div class="row">
+                <!-- SKILL BAR -->
+                <div id="skill" class="col-md-6 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms" data-scroll-index="4">
+                    <section class="section-padding bd-bottom">
                         <div class="skill-wrap">
                             <div class="section-heading mb-40">
-                                <h2 class="section-title" >Programming Proficiency</h2>
+                                <h2 class="section-title">Programming Proficiency</h2>
                             </div>
                             <ul class="skill-items">
                                 <li class="skill-item">
@@ -216,13 +220,15 @@
                                 </li>
                             </ul>
                         </div>
-                    </div>
+                    </section>
+                </div>
 
-                    <!-- SKILL BAR -->
-                    <div class="col-md-6 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
+                <!--  Software -->
+                <div id="skill" class="col-md-6 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms" data-scroll-index="5">
+                    <section class="section-padding bd-bottom">
                         <div class="skill-wrap">
                             <div class="section-heading mb-40">
-                                <h2 class="section-title" >Software</h2>
+                                <h2 class="section-title">Software</h2>
                             </div>
                             <div id="accordion" class="accordion">
                                 <div class="card">
@@ -262,15 +268,16 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </section>
                 </div>
             </div>
-        </section>
+        </div>
 
-        <section id="services" class="services-section section-padding bd-bottom" data-scroll-index="3">
+        <!-- SERVICES PROVIDED -->
+        <section id="service" class="section-padding bd-bottom" data-scroll-index="6">
             <div class="container">
                 <div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h2 class="section-title" >Services Provided</h2>
+                    <h2 class="section-title">Services Provided</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-4 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
@@ -297,8 +304,6 @@
                             <div class="dots"></div>
                         </div>
                     </div>
-                </div>
-                <div class="row">
                     <div class="col-md-4 col-sm-6 sm-padding wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                         <div class="services-item">
                             <i class="ti-settings"></i>
@@ -325,12 +330,14 @@
                     </div>
                 </div>
             </div>
-        </section><!-- /.services-section -->
+        </section>
 
-        <section id="projects" class="portfolio-section section-padding bd-bottom" data-scroll-index="4">
+        <!-- Projects -->
+
+        <section id="project" class="section-padding bd-bottom" data-scroll-index="7">
             <div class="container">
                 <div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h2 class="section-title" >Projects Done</h2>
+                    <h2 class="section-title">Projects Done</h2>
                 </div>
 
                 <div class="portfolio-wrapper">
@@ -339,7 +346,7 @@
                         <li data-filter=".website">Website</li>
                         <li data-filter=".mobile">Mobile</li>
                     </ul>
-                    
+
                     <!-- Portfolio Filter -->
 
                     <div class="row portfolio-items">
@@ -347,7 +354,7 @@
                             <div class="portfolio-box">
                                 <img src="img/Poliku-Eshop.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="img-popup" href="img/hero-bg.png">Poliku Eshop<span>Personal Project</span></a></h3>
+                                    <h3><a class="img-popup" href="img/home-bg.png">Poliku Eshop<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -360,17 +367,16 @@
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
-
             </div>
-        </section><!-- /.portfolio-section -->
+        </section>
 
-        <section id="reviews" class="testimonial-section section-padding bd-bottom" data-scroll-index="5">
+        <!-- review -->
+        <section id="review" class="section-padding bd-bottom" data-scroll-index="8">
             <div class="container">
                 <div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h2 class="section-title" >Clients Reviews</h2>
+                    <h2 class="section-title">Clients Reviews</h2>
                 </div>
                 <div id="testimonial-carousel" class="testimonial-carousel owl-carousel wow fadeInUp">
                     <div class="testimonial-item">
@@ -402,8 +408,9 @@
                     </div>
                 </div>
             </div>
-        </section><!-- /.testimonial-section -->
+        </section>
 
+        <!-- /.testimonial-section -->
         <!-- <section class="cta-section section-padding bd-bottom">
             <div class="container">
                 <div class="row">
@@ -419,10 +426,10 @@
             </div>
         </section>/.cta-section -->
 
-        <section id="contact" class="contact-section section-padding" data-scroll-index="6">
-            <div class="container wow fadeInUp">
+        <section id="contact" class="section-padding section-padding" data-scroll-index="9">
+            <div class="container">
                 <div class="section-heading mb-40 text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h2 class="section-title" >Contact Me</h2>
+                    <h2 class="section-title">Contact Me</h2>
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
@@ -471,6 +478,7 @@
 
     <!-- jQuery -->
     <script type="text/javascript" src="{{ URL::asset('js/vendor/jquery-1.12.4.min.js'); }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/main.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/popper.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/bootstrap.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/scrollit.js'); }}"></script>
@@ -483,7 +491,6 @@
     <script type="text/javascript" src="{{ URL::asset('js/vendor/bootstrap-menu.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/wow.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/contact.js'); }}"></script>
-    <script type="text/javascript" src="{{ URL::asset('js/main.js'); }}"></script>
 
 </body>
 
