@@ -69,8 +69,9 @@
                     <h2>I'm A <span class="typed"></span></h2>
 
                     <ul class="home-social">
-                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
-                        <li><a href="#"><i class="ti-github"></i></a></li>
+                        <li><a onclick="ToSocial('Github')"><i class="ti-linkedin"></i></a></li>
+                        <li><a onclick="ToSocial('LinkedIn')"><i class="ti-github"></i></a></li>
+                        <li><a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -463,11 +464,9 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="footer-social text-right">
-                            <a href="#"><i class="ti-facebook"></i></a>
-                            <a href="#"><i class="ti-twitter"></i></a>
-                            <a href="#"><i class="ti-instagram"></i></a>
-                            <a href="#"><i class="ti-linkedin"></i></a>
-                            <a href="#"><i class="ti-youtube"></i></a>
+                            <a onclick="ToSocial('Github')"><i class="ti-linkedin"></i></a>
+                            <a onclick="ToSocial('LinkedIn')"><i class="ti-github"></i></a>
+                            <a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a>
                         </div><!-- /.footer-social -->
                     </div>
                 </div>

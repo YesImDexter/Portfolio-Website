@@ -1,19 +1,36 @@
+
+/*=========================================================================
+Social Links New Tab
+=========================================================================*/
+
+function ToSocial(target) {
+    if (target == "Github") {
+        var link = "https://github.com/YesImDexter";
+    } else if (target == "LinkedIn") {
+        var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
+    } else if (target == "Stack") {
+        var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
+    }
+    var win = window.open(link, '_blank');
+    win.focus();
+};
+
 $(function () {
     "use strict";
-    
-    $(window).on('load', function() {
+
+    $(window).on('load', function () {
         $('body').addClass('loaded');
     });
 
-/*=========================================================================
-    Arcoordian List
-=========================================================================*/    
+    /*=========================================================================
+        Arcoordian List
+    =========================================================================*/
 
     // $('.collapse').collapse()
 
-/*=========================================================================
-    Burger Menu
-=========================================================================*/    
+    /*=========================================================================
+        Burger Menu
+    =========================================================================*/
     var burgerMenu = function () {
         $('.js-addo-nav-toggle').on('click', function (event) {
             event.preventDefault();
@@ -49,54 +66,54 @@ $(function () {
     };
     var wind = $(window);
 
-/*=========================================================================
-    Typed js Active
-=========================================================================*/
+    /*=========================================================================
+        Typed js Active
+    =========================================================================*/
     $(".typed").typed({
         strings: ["Programmer.", "Designer.", "Developer."],
         loop: true,
         typeSpeed: 150
     });
 
-/*=========================================================================
-    Portfolios
-=========================================================================*/
-	$('.portfolio-items').imagesLoaded( function() {
+    /*=========================================================================
+        Portfolios
+    =========================================================================*/
+    $('.portfolio-items').imagesLoaded(function () {
 
-		 // Add isotope click function
-		$('.portfolio-filter li').on( 'click', function(){
-	        $(".portfolio-filter li").removeClass("active");
-	        $(this).addClass("active");
-	 
-	        var selector = $(this).attr('data-filter');
-	        $(".portfolio-items").isotope({
-	            filter: selector,
-	            animationOptions: {
-	                duration: 750,
-	                easing: 'linear',
-	                queue: false,
-	            }
-	        });
-	        return false;
-	    });
+        // Add isotope click function
+        $('.portfolio-filter li').on('click', function () {
+            $(".portfolio-filter li").removeClass("active");
+            $(this).addClass("active");
 
-	    $(".portfolio-items").isotope({
-	        itemSelector: '.single-item',
-	        layoutMode: 'masonry',
-	    });
-	});
+            var selector = $(this).attr('data-filter');
+            $(".portfolio-items").isotope({
+                filter: selector,
+                animationOptions: {
+                    duration: 750,
+                    easing: 'linear',
+                    queue: false,
+                }
+            });
+            return false;
+        });
 
-/*=========================================================================
-        Active venobox ( Porjects List )
-=========================================================================*/
-	$('.img-popup').venobox({
-		numeratio: true,
-		infinigall: true
-	});
+        $(".portfolio-items").isotope({
+            itemSelector: '.single-item',
+            layoutMode: 'masonry',
+        });
+    });
 
-/*=========================================================================
-    Testimonial Carousel
-=========================================================================*/
+    /*=========================================================================
+            Active venobox ( Porjects List )
+    =========================================================================*/
+    $('.img-popup').venobox({
+        numeratio: true,
+        infinigall: true
+    });
+
+    /*=========================================================================
+        Testimonial Carousel
+    =========================================================================*/
     $('#testimonial-carousel').owlCarousel({
         loop: true,
         margin: 10,
@@ -106,30 +123,30 @@ $(function () {
         nav: false,
         navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
         dots: true,
-        responsive : {
-            0 : {
+        responsive: {
+            0: {
                 items: 1
             },
-            480 : {
+            480: {
                 items: 1,
             },
-            768 : {
+            768: {
                 items: 2,
             },
-            992 : {
+            992: {
                 items: 2,
             }
         }
     });
-    
-/*=========================================================================
-    wow Settings
-=========================================================================*/
-    var wow = new WOW( {
+
+    /*=========================================================================
+        wow Settings
+    =========================================================================*/
+    var wow = new WOW({
         mobile: false,
         offset: 0
     });
-    wow.init();    
+    wow.init();
     // scroll
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section
@@ -140,5 +157,14 @@ $(function () {
         onPageChange: null, // function(pageIndex) that is called when page is changed
         topOffset: 0 // offste (in px) for fixed top navigation
     });
- 
+
+
+    /*=========================================================================
+    Hover Effect On Mobile
+    =========================================================================*/
+
+    $('.gridItem').bind('touchstart touchend', function (e) {
+        e.preventDefault();
+        $(this).toggleClass('hover_effect');
+    });
 });
