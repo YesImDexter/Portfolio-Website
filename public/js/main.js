@@ -137,34 +137,34 @@ $(function () {
                 items: 2,
             }
         }
-    });
+});
 
-    /*=========================================================================
-        wow Settings
-    =========================================================================*/
-    var wow = new WOW({
-        mobile: false,
-        offset: 0
-    });
-    wow.init();
-    // scroll
-    $.scrollIt({
-        upKey: 38, // key code to navigate to the next section
-        downKey: 40, // key code to navigate to the previous section
-        easing: 'swing', // the easing function for animation
-        scrollTime: 600, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
-        onPageChange: null, // function(pageIndex) that is called when page is changed
-        topOffset: 0 // offste (in px) for fixed top navigation
-    });
+/*=========================================================================
+    wow Settings
+=========================================================================*/
+var wow = new WOW({
+    mobile: false,
+    offset: 0
+});
+wow.init();
+// scroll
+$.scrollIt({
+    upKey: 38, // key code to navigate to the next section
+    downKey: 40, // key code to navigate to the previous section
+    easing: 'swing', // the easing function for animation
+    scrollTime: 600, // how long (in ms) the animation takes
+    activeClass: 'active', // class given to the active nav element
+    onPageChange: null, // function(pageIndex) that is called when page is changed
+    topOffset: 0 // offste (in px) for fixed top navigation
+});
 
 
-    /*=========================================================================
-    Hover Effect On Mobile
-    =========================================================================*/
+/*=========================================================================
+Hover Effect On Mobile
+=========================================================================*/
 
-    $('.gridItem').bind('touchstart touchend', function (e) {
-        e.preventDefault();
-        $(this).toggleClass('hover_effect');
-    });
+$('.gridItem').bind('touchstart touchend', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('hover_effect');
+});
 });

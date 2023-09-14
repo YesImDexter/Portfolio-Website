@@ -4,10 +4,10 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Dexter Skudd's Portfolio">
-    <meta name="author" content="TEST PORTFOLIO">
+    <meta name="description" content="Explore my web programming portfolio showcasing a range of innovative projects and skills. Discover dynamic web development expertise and creative solutions.">
+    <meta name="author" content="Dexter Skudd">
 
-    <title>Dexter Skudd</title>
+    <title>Portfolio | Dexter Skudd</title>
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('img/favicon.png'); }}" />
 
@@ -233,7 +233,7 @@
                             </div>
                             <div id="accordion" class="accordion">
                                 <div class="card">
-                                    <a class="card-link card-header" data-toggle="collapse" href="#collapseOne">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse1">
                                         <div class="row w-auto justify-content-between">
                                             <div class="col">
                                                 After Effects
@@ -243,15 +243,15 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div id="collapseOne" class="collapse" data-parent="#accordion">
+                                    <div id="collapse1" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            I would actively explore and experiment with various video editing techniques as I love creating short but visually packed videos.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <a class="card-link card-header" data-toggle="collapse" href="#collapseTwo">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse2">
                                         <div class="row w-auto justify-content-between">
                                             <div class="col">
                                                 Premier Pro
@@ -261,9 +261,99 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                    <div id="collapse2" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                            I created videos and montages as a freelance gig during my leisure time. My current knowledge of this software is quite sufficient for achieving good to great results.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse3">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                Photoshop
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse3" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            I would occasionally create and edit images for events or personal projects.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse4">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                Laragon
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse4" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Used as my local development server for projects. Very familiar with this software.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse5">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                GitHub
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse5" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            The main version control software that I use for my projects. Quite familiar the the basics of GitHub.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse6">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                Sublime
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse6" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Currently using Sublime as a way to create and test front-end designs to be implemented later on during development. I really love the live editing feature that Sublime offers.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse7">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                Visual Studio Code
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse7" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            My main IDE that I am very familiar with in terms of ease of use and versatility.
                                         </div>
                                     </div>
                                 </div>
@@ -464,8 +554,8 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="footer-social text-right">
-                            <a onclick="ToSocial('Github')"><i class="ti-linkedin"></i></a>
-                            <a onclick="ToSocial('LinkedIn')"><i class="ti-github"></i></a>
+                            <a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a>
+                            <a onclick="ToSocial('Github')"><i class="ti-github"></i></a>
                             <a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a>
                         </div><!-- /.footer-social -->
                     </div>

@@ -14,6 +14,7 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
+    /* outline: 1px solid #f00 !important; */
 }
 
 body {
@@ -638,20 +639,19 @@ h6 {
     background-image: url(../img/doted-pattern.png);
     position: absolute;
     width: 200px;
-    height: 200px;
-    right: -50px;
-    bottom: -50px;
-    opacity: 0.5;
+    height: 150px;
+    right: 20px;
+    bottom: -25px;
     visibility: hidden;
     opacity: 0;
     display: block;
     transition: all 0.7s ease-in-out;
-    z-index: -1;
+    z-index: 1;
 }
 
 .services-item:hover .dots {
     visibility: visible;
-    opacity: 0.5;
+    opacity: 0.2;
     transition: all 0.7s ease-in-out;
 }
 
@@ -811,6 +811,12 @@ h6 {
 .testimonial-item {
     padding-top: 40px;
 }
+
+.owl-carousel {
+    touch-action: none;
+    max-width: 100%;
+}
+
 
 .testimonial-carousel.owl-carousel .owl-controls {
     margin-top: 40px;
