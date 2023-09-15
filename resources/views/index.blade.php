@@ -69,9 +69,10 @@
                     <h2>I'm A <span class="typed"></span></h2>
 
                     <ul class="home-social">
-                        <li><a onclick="ToSocial('Github')"><i class="ti-linkedin"></i></a></li>
-                        <li><a onclick="ToSocial('LinkedIn')"><i class="ti-github"></i></a></li>
+                        <li><a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a></li>
+                        <li><a onclick="ToSocial('Github')"><i class="ti-github"></i></a></li>
                         <li><a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a></li>
+                        <li><a onclick="ToSocial('Email')"><i class="ti-email"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -174,24 +175,24 @@
                                 <li class="skill-item">
                                     <h5>HTML</h5>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 80%;">
-                                            <span>80%</span>
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                                            <span>90%</span>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="skill-item">
                                     <h5>CSS</h5>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
-                                            <span>90%</span>
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms" role="progressbar" style="width: 85%;">
+                                            <span>85%</span>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="skill-item">
                                     <h5>Javascript</h5>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 75%;">
-                                            <span>75%</span>
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 60%;">
+                                            <span>60%</span>
                                         </div>
                                     </div>
                                 </li>
@@ -354,6 +355,24 @@
                                     <div id="collapse7" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
                                             My main IDE that I am very familiar with in terms of ease of use and versatility.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse8">
+                                        <div class="row w-auto justify-content-between">
+                                            <div class="col">
+                                                CPanel
+                                            </div>
+                                            <div class="col text-right">
+                                                <i class="ti-angle-down"></i>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div id="collapse8" class="collapse" data-parent="#accordion">
+                                        <div class="card-body">
+                                            Actively experimenting and exploring various features and capabilities of Cpanel. This website for example has been configured and deployed on a shared hosting server using CPanel.
                                         </div>
                                     </div>
                                 </div>
@@ -557,6 +576,7 @@
                             <a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a>
                             <a onclick="ToSocial('Github')"><i class="ti-github"></i></a>
                             <a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a>
+                            <a onclick="ToSocial('Email')"><i class="ti-email"></i></a>
                         </div><!-- /.footer-social -->
                     </div>
                 </div>
