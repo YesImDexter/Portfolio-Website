@@ -1,6 +1,6 @@
 /* =======  Google Fonts  ======= */
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Teko:400,500,600,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|Teko:400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
 
 /* ==========================================================================
    Global Properties
@@ -18,7 +18,7 @@
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     line-height: 26px;
     font-weight: 400;
@@ -29,7 +29,7 @@ body {
 }
 
 p {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 15px;
     line-height: 26px;
     font-weight: 400;
@@ -52,11 +52,11 @@ a {
 span:hover,
 a:hover {
     text-decoration: none;
-    color: #22A39F;
+    color: #22a39f;
 }
 
 b {
-    color: #22A39F;
+    color: #22a39f;
     font-weight: 400;
 }
 
@@ -92,7 +92,7 @@ h5,
 h6 {
     color: #fff;
     font-weight: 400;
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
 }
 
 /* =======  Margin  ======= */
@@ -210,11 +210,11 @@ h6 {
     width: 100%;
     background: #fff;
     top: 0;
-    left: 0
+    left: 0;
 }
 
 .site-preloader-wrap .spinner {
-    background-color: #22A39F;
+    background-color: #22a39f;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -227,17 +227,17 @@ h6 {
     height: 40px;
 
     border-radius: 100%;
-    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
-    animation: sk-scaleout 1.0s infinite ease-in-out;
+    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
+    animation: sk-scaleout 1s infinite ease-in-out;
 }
 
 @-webkit-keyframes sk-scaleout {
     0% {
-        -webkit-transform: scale(0)
+        -webkit-transform: scale(0);
     }
 
     100% {
-        -webkit-transform: scale(1.0);
+        -webkit-transform: scale(1);
         opacity: 0;
     }
 }
@@ -249,8 +249,8 @@ h6 {
     }
 
     100% {
-        -webkit-transform: scale(1.0);
-        transform: scale(1.0);
+        -webkit-transform: scale(1);
+        transform: scale(1);
         opacity: 0;
     }
 }
@@ -294,7 +294,7 @@ h6 {
    ========================================================================== */
 
 .logo.a {
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     font-size: 1px;
 }
 
@@ -320,16 +320,16 @@ h6 {
     font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 0;
-    -webkit-animation-delay: .2s;
-    animation-delay: .2s;
+    -webkit-animation-delay: 0.2s;
+    animation-delay: 0.2s;
     letter-spacing: 15px;
 }
 
 .header .caption h1 {
     font-size: 75px;
     color: #fff;
-    -webkit-animation-delay: .6s;
-    animation-delay: .6s;
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
     text-transform: uppercase;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -360,16 +360,16 @@ h6 {
 }
 
 .header .caption p span:after {
-    content: '';
+    content: "";
     width: 7px;
     height: 7px;
     margin-bottom: 10px;
     border-radius: 50%;
-    background: #22A39F;
+    background: #22a39f;
     position: absolute;
     top: 10px;
     right: 0;
-    opacity: .5;
+    opacity: 0.5;
 }
 
 .header .caption .btn {
@@ -407,7 +407,7 @@ h6 {
 }
 
 .home-content h2 span {
-    color: #22A39F;
+    color: #22a39f;
 }
 
 .home-social {
@@ -440,7 +440,8 @@ h6 {
     height: auto;
 }
 
-.about-content {}
+.about-content {
+}
 
 .about-bg img {
     width: 100%;
@@ -472,7 +473,7 @@ h6 {
     font-weight: 600;
     width: 100px;
     letter-spacing: 0;
-    color: #22A39F;
+    color: #22a39f;
     position: relative;
     margin-right: 10px;
 }
@@ -487,9 +488,11 @@ h6 {
 /* ==========================================================================
    Resume Section
    ========================================================================== */
-.resume-section {}
+.resume-section {
+}
 
-.exp-list {}
+.exp-list {
+}
 
 .edu-icon {
     object-fit: cover;
@@ -510,7 +513,7 @@ h6 {
 }
 
 .exp-date i {
-    background-color: #22A39F;
+    background-color: #22a39f;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -520,10 +523,11 @@ h6 {
     margin-right: 10px;
 }
 
-.exp-date span {}
+.exp-date span {
+}
 
-.exp-content {}
-
+.exp-content {
+}
 
 /* ==========================================================================
    Software Accordion Section
@@ -539,7 +543,7 @@ h6 {
 }
 
 .accordion a {
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     color: #fff;
     font-size: 25px;
     font-weight: 400;
@@ -572,17 +576,17 @@ h6 {
 
 .skill-items .skill-item .progress,
 .skill-items .skill-item .progress .progress-bar {
-    border-radius: 2px
+    border-radius: 2px;
 }
 
 .skill-items .skill-item .progress .progress-bar {
     line-height: 5px;
-    background-color: #22A39F;
-    position: relative
+    background-color: #22a39f;
+    position: relative;
 }
 
 .skill-items .skill-item .progress .progress-bar span {
-    background-color: #22A39F;
+    background-color: #22a39f;
     width: 30px;
     height: 30px;
     line-height: 30px;
@@ -656,7 +660,7 @@ h6 {
 }
 
 .services-item i {
-    color: #22A39F;
+    color: #22a39f;
     font-size: 50px;
     display: block;
     margin-bottom: 20px;
@@ -674,7 +678,8 @@ h6 {
    Portfolio Section
    ========================================================================== */
 
-.portfolio-section {}
+.portfolio-section {
+}
 
 .portfolio-box {
     position: relative;
@@ -730,7 +735,7 @@ h6 {
 }
 
 .portfolio-content h3 a {
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     display: block;
     font-size: 40px;
     color: #fff;
@@ -744,7 +749,6 @@ h6 {
     letter-spacing: 0.5px;
 }
 
-
 /* =======  Portfolio Filter Styles  ======= */
 .portfolio-filter {
     display: block;
@@ -757,7 +761,7 @@ h6 {
     text-transform: uppercase;
     color: #fff;
     font-size: 20px;
-    font-family: 'Teko', sans-serif;
+    font-family: "Teko", sans-serif;
     font-weight: 400;
 }
 
@@ -773,7 +777,7 @@ h6 {
     left: 0;
     width: 100%;
     height: 5px;
-    background: #22A39F;
+    background: #22a39f;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 0 50%;
@@ -806,7 +810,8 @@ h6 {
 /* ==========================================================================
    Testimonial Section
    ========================================================================== */
-.testimonial-section {}
+.testimonial-section {
+}
 
 .testimonial-item {
     padding-top: 40px;
@@ -816,7 +821,6 @@ h6 {
     touch-action: none;
     max-width: 100%;
 }
-
 
 .testimonial-carousel.owl-carousel .owl-controls {
     margin-top: 40px;
@@ -860,19 +864,21 @@ h6 {
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
-    background-color: #22A39F;
+    background-color: #22a39f;
 }
 
 .owl-theme .owl-dots .owl-dot:hover span {
-    background-color: #22A39F;
+    background-color: #22a39f;
 }
 
 /* ==========================================================================
    Contact Section
    ========================================================================== */
-.contact-section {}
+.contact-section {
+}
 
-.contact-form {}
+.contact-form {
+}
 
 .contact-form .form-group {
     margin-bottom: 30px;
@@ -920,7 +926,7 @@ h6 {
 .default-btn {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
-    background-color: #22A39F;
+    background-color: #22a39f;
     color: #fff;
     line-height: 45px;
     display: inline-block;
@@ -1001,7 +1007,7 @@ footer p {
 }
 
 footer p a {
-    color: #22A39F;
+    color: #22a39f;
 }
 
 .footer-social {
@@ -1037,14 +1043,14 @@ footer p a {
         display: none;
     }
 
-    .dl-side-content>.logo h1 {
+    .dl-side-content > .logo h1 {
         color: #fff;
         font-weight: 400;
         margin: 0;
         font-size: 30px;
     }
 
-    .dl-side-content>.logo h1 span {
+    .dl-side-content > .logo h1 span {
         display: none;
     }
 }
@@ -1088,21 +1094,19 @@ footer p a {
         margin: 50px 0 0;
     }
 
-    .dl-side-content>.logo h1 {
+    .dl-side-content > .logo h1 {
         color: #fff;
         font-weight: 400;
         margin: 0;
         font-size: 30px;
     }
 
-    .dl-side-content>.logo h1 span {
+    .dl-side-content > .logo h1 span {
         display: none;
     }
 }
 
-
 @media screen and (max-width: 767px) {
-
     .section-title {
         padding-top: 50px;
     }
@@ -1124,20 +1128,20 @@ footer p a {
         padding: 0 0;
     }
 
-    .dl-side-content>.logo img {
+    .dl-side-content > .logo img {
         max-width: inherit;
         max-height: 30px;
         width: auto;
     }
 
-    .dl-side-content>.logo h1 {
+    .dl-side-content > .logo h1 {
         color: #fff;
         font-weight: 400;
         margin: 0;
         font-size: 30px;
     }
 
-    .dl-side-content>.logo h1 span {
+    .dl-side-content > .logo h1 span {
         display: none;
     }
 
@@ -1192,20 +1196,20 @@ footer p a {
         line-height: 1.2em;
     }
 
-    .dl-side-content>.logo img {
+    .dl-side-content > .logo img {
         max-width: inherit;
         max-height: 30px;
         width: auto;
     }
 
-    .dl-side-content>.logo h1 {
+    .dl-side-content > .logo h1 {
         color: #fff;
         font-weight: 400;
         margin: 0;
         font-size: 30px;
     }
 
-    .dl-side-content>.logo h1 span {
+    .dl-side-content > .logo h1 span {
         display: none;
     }
 

@@ -1,4 +1,3 @@
-
 /*=========================================================================
 Social Links New Tab
 =========================================================================*/
@@ -11,22 +10,22 @@ function ToSocial(target) {
     } else if (target == "Stack") {
         var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
     } else if (target == "Email") {
-        window.location.href = 'mailto:DexterS0202@gmail.com';
+        window.location.href = "mailto:DexterS0202@gmail.com";
         break social;
     }
 
     // FIX HERE LATER
-    if (link =! "Email") {
-        var win = window.open(link, '_blank');
+    if ((link = !"Email")) {
+        var win = window.open(link, "_blank");
         win.focus();
     }
-};
+}
 
 $(function () {
     "use strict";
 
-    $(window).on('load', function () {
-        $('body').addClass('loaded');
+    $(window).on("load", function () {
+        $("body").addClass("loaded");
     });
 
     /*=========================================================================
@@ -39,16 +38,15 @@ $(function () {
         Burger Menu
     =========================================================================*/
     var burgerMenu = function () {
-        $('.js-addo-nav-toggle').on('click', function (event) {
+        $(".js-addo-nav-toggle").on("click", function (event) {
             event.preventDefault();
             var $this = $(this);
-            if ($('body').hasClass('offcanvas')) {
-                $this.removeClass('active');
-                $('body').removeClass('offcanvas');
-            }
-            else {
-                $this.addClass('active');
-                $('body').addClass('offcanvas');
+            if ($("body").hasClass("offcanvas")) {
+                $this.removeClass("active");
+                $("body").removeClass("offcanvas");
+            } else {
+                $this.addClass("active");
+                $("body").addClass("offcanvas");
             }
         });
     };
@@ -57,17 +55,20 @@ $(function () {
     var mobileMenuOutsideClick = function () {
         $(document).click(function (e) {
             var container = $("#addo-aside, .js-addo-nav-toggle");
-            if (!container.is(e.target) && container.has(e.target).length === 0) {
-                if ($('body').hasClass('offcanvas')) {
-                    $('body').removeClass('offcanvas');
-                    $('.js-addo-nav-toggle').removeClass('active');
+            if (
+                !container.is(e.target) &&
+                container.has(e.target).length === 0
+            ) {
+                if ($("body").hasClass("offcanvas")) {
+                    $("body").removeClass("offcanvas");
+                    $(".js-addo-nav-toggle").removeClass("active");
                 }
             }
         });
         $(window).scroll(function () {
-            if ($('body').hasClass('offcanvas')) {
-                $('body').removeClass('offcanvas');
-                $('.js-addo-nav-toggle').removeClass('active');
+            if ($("body").hasClass("offcanvas")) {
+                $("body").removeClass("offcanvas");
+                $(".js-addo-nav-toggle").removeClass("active");
             }
         });
     };
@@ -79,60 +80,62 @@ $(function () {
     $(".typed").typed({
         strings: ["Programmer.", "Designer.", "Developer."],
         loop: true,
-        typeSpeed: 150
+        typeSpeed: 150,
     });
 
     /*=========================================================================
         Portfolios
     =========================================================================*/
-    $('.portfolio-items').imagesLoaded(function () {
-
+    $(".portfolio-items").imagesLoaded(function () {
         // Add isotope click function
-        $('.portfolio-filter li').on('click', function () {
+        $(".portfolio-filter li").on("click", function () {
             $(".portfolio-filter li").removeClass("active");
             $(this).addClass("active");
 
-            var selector = $(this).attr('data-filter');
+            var selector = $(this).attr("data-filter");
             $(".portfolio-items").isotope({
                 filter: selector,
                 animationOptions: {
                     duration: 750,
-                    easing: 'linear',
+                    easing: "linear",
                     queue: false,
-                }
+                },
             });
             return false;
         });
 
         $(".portfolio-items").isotope({
-            itemSelector: '.single-item',
-            layoutMode: 'masonry',
+            itemSelector: ".single-item",
+            layoutMode: "masonry",
         });
     });
 
     /*=========================================================================
             Active venobox ( Porjects List )
     =========================================================================*/
-    $('.img-popup').venobox({
+    $(".img-popup").venobox({
         numeratio: true,
-        infinigall: true
+        infinigall: true,
     });
 
     /*=========================================================================
         Testimonial Carousel
     =========================================================================*/
-    $('#testimonial-carousel').owlCarousel({
+    $("#testimonial-carousel").owlCarousel({
         loop: true,
         margin: 10,
         center: false,
         autoplay: true,
         smartSpeed: 500,
         nav: false,
-        navText: ['<i class="fa fa-caret-left"></i>', '<i class="fa fa-caret-right"></i>'],
+        navText: [
+            '<i class="fa fa-caret-left"></i>',
+            '<i class="fa fa-caret-right"></i>',
+        ],
         dots: true,
         responsive: {
             0: {
-                items: 1
+                items: 1,
             },
             480: {
                 items: 1,
@@ -142,8 +145,8 @@ $(function () {
             },
             992: {
                 items: 2,
-            }
-        }
+            },
+        },
     });
 
     /*=========================================================================
@@ -151,27 +154,26 @@ $(function () {
     =========================================================================*/
     var wow = new WOW({
         mobile: false,
-        offset: 0
+        offset: 0,
     });
     wow.init();
     // scroll
     $.scrollIt({
         upKey: 38, // key code to navigate to the next section
         downKey: 40, // key code to navigate to the previous section
-        easing: 'swing', // the easing function for animation
+        easing: "swing", // the easing function for animation
         scrollTime: 600, // how long (in ms) the animation takes
-        activeClass: 'active', // class given to the active nav element
+        activeClass: "active", // class given to the active nav element
         onPageChange: null, // function(pageIndex) that is called when page is changed
-        topOffset: 0 // offste (in px) for fixed top navigation
+        topOffset: 0, // offste (in px) for fixed top navigation
     });
-
 
     /*=========================================================================
     Hover Effect On Mobile
     =========================================================================*/
 
-    $('.gridItem').bind('touchstart touchend', function (e) {
+    $(".gridItem").bind("touchstart touchend", function (e) {
         e.preventDefault();
-        $(this).toggleClass('hover_effect');
+        $(this).toggleClass("hover_effect");
     });
 });
