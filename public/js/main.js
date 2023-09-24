@@ -3,22 +3,16 @@ Social Links New Tab
 =========================================================================*/
 
 function ToSocial(target) {
-    social: if (target == "Github") {
+    if (target == "Github") {
         var link = "https://github.com/YesImDexter";
     } else if (target == "LinkedIn") {
         var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
     } else if (target == "Stack") {
         var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
-    } else if (target == "Email") {
-        window.location.href = "mailto:DexterS0202@gmail.com";
-        break social;
     }
 
-    // FIX HERE LATER
-    if ((link = !"Email")) {
-        var win = window.open(link, "_blank");
-        win.focus();
-    }
+    var win = window.open(link, "_blank");
+    win.focus();
 }
 
 $(function () {
@@ -113,9 +107,12 @@ $(function () {
     /*=========================================================================
             Active venobox ( Porjects List )
     =========================================================================*/
-    $(".img-popup").venobox({
-        numeratio: true,
+
+    $(".pop-up").venobox({
+        numeration: true,
         infinigall: true,
+        spinner: "wave",
+        shareStyle: "pill",
     });
 
     /*=========================================================================

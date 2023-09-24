@@ -24,7 +24,7 @@
 
 <body>
     <div class="site-preloader-wrap">
-        <div class="spinner"></div>
+        <div class="loader"></div>
     </div>
 
     <div class="dl-fixed-sidebar dl-sidebar-left">
@@ -72,7 +72,6 @@
                         <li><a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a></li>
                         <li><a onclick="ToSocial('Github')"><i class="ti-github"></i></a></li>
                         <li><a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a></li>
-                        <li><a onclick="ToSocial('Email')"><i class="ti-email"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -94,7 +93,8 @@
                                 <li><span>Email</span> DexterS0202@gmail.com</li>
                             </ul>
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
-                            <a href="img/RickRoll.mp4" class="default-btn"> Presentation Video <i class="ti-control-play img-popup"></i></a>
+                            <!-- <a href="img/RickRoll.mp4" class="my-video-links"> Presentation Video </a> -->
+                            <!-- <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a> -->
 
                         </div>
                     </div>
@@ -197,6 +197,14 @@
                                     </div>
                                 </li>
                                 <li class="skill-item">
+                                    <h5>SQL</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 70%;">
+                                            <span>70%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skill-item">
                                     <h5>Laravel</h5>
                                     <div class="progress">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms" role="progressbar" style="width: 60%;">
@@ -209,14 +217,6 @@
                                     <div class="progress">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms" role="progressbar" style="width: 70%;">
                                             <span>70%</span>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="skill-item">
-                                    <h5>APIs</h5>
-                                    <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay="400ms" data-wow-duration="2000ms" role="progressbar" style="width: 10%;">
-                                            <span>10%</span>
                                         </div>
                                     </div>
                                 </li>
@@ -464,7 +464,7 @@
                             <div class="portfolio-box">
                                 <img src="img/Poliku-Eshop.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="img-popup" href="img/home-bg.png">Poliku Eshop<span>Personal Project</span></a></h3>
+                                    <h3><a class="pop-up" href="img/Poliku-Eshop.png" title="Poliku Eshop By Dexter Skudd">Poliku Eshop<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +473,7 @@
                             <div class="portfolio-box">
                                 <img src="img/Directory-System.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="img-popup" href="img/Directory-System.png">Directory System<span>Personal Project</span></a></h3>
+                                    <h3><a class="pop-up" href="img/Directory-System.png" title="Directory System By Dexter Skudd">Directory System<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -576,7 +576,6 @@
                             <a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a>
                             <a onclick="ToSocial('Github')"><i class="ti-github"></i></a>
                             <a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a>
-                            <a onclick="ToSocial('Email')"><i class="ti-email"></i></a>
                         </div><!-- /.footer-social -->
                     </div>
                 </div>
@@ -588,6 +587,7 @@
     <!-- jQuery -->
     <script type="text/javascript" src="{{ URL::asset('js/vendor/jquery-1.12.4.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/main.js'); }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/vendor/sweetalert2.all.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/popper.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/bootstrap.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/scrollit.js'); }}"></script>

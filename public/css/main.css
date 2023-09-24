@@ -14,7 +14,7 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
-    /* outline: 1px solid #f00 !important; */
+
 }
 
 body {
@@ -208,13 +208,12 @@ h6 {
     z-index: 999;
     height: 100%;
     width: 100%;
-    background: #fff;
+    background: #292929;
     top: 0;
     left: 0;
 }
 
-.site-preloader-wrap .spinner {
-    background-color: #22a39f;
+.site-preloader-wrap .loader {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -222,36 +221,33 @@ h6 {
     margin-top: -20px;
 }
 
-.spinner {
-    width: 40px;
-    height: 40px;
-
-    border-radius: 100%;
-    -webkit-animation: sk-scaleout 1s infinite ease-in-out;
-    animation: sk-scaleout 1s infinite ease-in-out;
+.loader {
+    width: 48px;
+    height: 48px;
+}
+.loader::after,
+.loader::before {
+    content: "";
+    width: 48px;
+    height: 48px;
+    border: 2px solid #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    animation: rotation 2s ease-in-out infinite;
+}
+.loader::after {
+    border-color: #22a39f;
+    animation-delay: 1s;
 }
 
-@-webkit-keyframes sk-scaleout {
+@keyframes rotation {
     0% {
-        -webkit-transform: scale(0);
+        transform: rotate(0deg);
     }
-
     100% {
-        -webkit-transform: scale(1);
-        opacity: 0;
-    }
-}
-
-@keyframes sk-scaleout {
-    0% {
-        -webkit-transform: scale(0);
-        transform: scale(0);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
+        transform: rotate(360deg);
     }
 }
 
@@ -631,6 +627,7 @@ h6 {
     background-color: transparent;
     top: 0;
     transition: all 0.7s ease-in-out;
+    cursor: default;
 }
 
 .services-item:hover {
@@ -749,7 +746,14 @@ h6 {
     letter-spacing: 0.5px;
 }
 
+/* =======  VenoBox2 margin sizing  ======= */
+
+.vbox-content {
+    margin-top: 9px !important;
+}
+
 /* =======  Portfolio Filter Styles  ======= */
+
 .portfolio-filter {
     display: block;
 }
