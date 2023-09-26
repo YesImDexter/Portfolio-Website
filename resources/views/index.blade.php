@@ -47,7 +47,7 @@
                     <li><a href="#software" data-scroll-nav="5">Software</a></li>
                     <li><a href="#service" data-scroll-nav="6">Services</a></li>
                     <li><a href="#project" data-scroll-nav="7"> Projects</a></li>
-                    <li><a href="#review" data-scroll-nav="8">Reviews</a></li>
+                    <!-- <li><a href="#review" data-scroll-nav="8">Reviews</a></li> -->
                     <li><a href="#contact" data-scroll-nav="9">Contact Me</a></li>
                 </ul>
             </nav>
@@ -92,6 +92,8 @@
                                 <li><span>Gender</span> Male </li>
                                 <li><span>Email</span> DexterS0202@gmail.com</li>
                             </ul>
+
+
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
                             <!-- <a href="img/RickRoll.mp4" class="my-video-links"> Presentation Video </a> -->
                             <!-- <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a> -->
@@ -121,9 +123,10 @@
                                     <i class="ti-bookmark-alt"></i>
                                     <span>June 2020 - June 2023</span>
                                 </div>
+                                <div class="exp-logo"> <img src="img/icon-poli.png"> </div>
                                 <div class="exp-content">
                                     <h4>Politeknik Kuching Sarawak. <span>Diploma in Information Technology </span></h4>
-                                    <p>Politeknik Kuching Sarawak holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
+                                    <p>Politeknik Kuching Sark holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
                                 </div>
                             </li>
                         </ul>
@@ -141,6 +144,7 @@
                                     <i class="ti-briefcase"></i>
                                     <span>January 2023 - June 2023</span>
                                 </div>
+                                <div class="exp-logo"> <img src="img/icon-ss.png"> </div>
                                 <div class="exp-content">
                                     <h4>Sarawak Skills. <span>Software Engineer Internship</span></h4>
                                     <p>During my internship at Sarawak Skills, I gained valuable experience working with various web frameworks, explored software project management, and stayed updated with the latest industry-standard technologies. This comprehensive exposure was a vital part of my diploma journey and continues to empower me as I advance in the field of programming and web design.</p>
@@ -157,6 +161,7 @@
                                 </div>
                             </li>
                         </ul>
+
                     </section><!-- /.Experience-section -->
                 </div>
             </div>
@@ -327,7 +332,7 @@
                                     <a class="card-link card-header" data-toggle="collapse" href="#collapse6">
                                         <div class="row w-auto justify-content-between">
                                             <div class="col">
-                                                Sublime
+                                                Visual Studio Code
                                             </div>
                                             <div class="col text-right">
                                                 <i class="ti-angle-down"></i>
@@ -336,31 +341,13 @@
                                     </a>
                                     <div id="collapse6" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
-                                            Currently using Sublime as a way to create and test front-end designs to be implemented later on during development. I really love the live editing feature that Sublime offers.
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="card">
-                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse7">
-                                        <div class="row w-auto justify-content-between">
-                                            <div class="col">
-                                                Visual Studio Code
-                                            </div>
-                                            <div class="col text-right">
-                                                <i class="ti-angle-down"></i>
-                                            </div>
-                                        </div>
-                                    </a>
-                                    <div id="collapse7" class="collapse" data-parent="#accordion">
-                                        <div class="card-body">
                                             My main IDE that I am very familiar with in terms of ease of use and versatility.
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="card">
-                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse8">
+                                    <a class="card-link card-header" data-toggle="collapse" href="#collapse7">
                                         <div class="row w-auto justify-content-between">
                                             <div class="col">
                                                 CPanel
@@ -370,7 +357,7 @@
                                             </div>
                                         </div>
                                     </a>
-                                    <div id="collapse8" class="collapse" data-parent="#accordion">
+                                    <div id="collapse7" class="collapse" data-parent="#accordion">
                                         <div class="card-body">
                                             Actively experimenting and exploring various features and capabilities of Cpanel. This website for example has been configured and deployed on a shared hosting server using CPanel.
                                         </div>
@@ -410,7 +397,7 @@
                         <div class="services-item">
                             <i class="ti-layout"></i>
                             <h3>Framework Orientated</h3>
-                            <p>Familiar working with frameworks that uses MVC architecture such as Laravel and Codeigniter.</p>
+                            <p>Familiar working with frameworks that uses MVC architecture such as Laravel and Codeigniter 4.</p>
                             <div class="dots"></div>
                         </div>
                     </div>
@@ -464,7 +451,7 @@
                             <div class="portfolio-box">
                                 <img src="img/Poliku-Eshop.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="pop-up" href="img/Poliku-Eshop.png" title="Poliku Eshop By Dexter Skudd">Poliku Eshop<span>Personal Project</span></a></h3>
+                                    <h3><a class="pop-up" href="img/poliku-eshop-open.png" title="Poliku Eshop By Dexter Skudd">Poliku Eshop<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
@@ -483,7 +470,7 @@
         </section>
 
         <!-- review -->
-        <section id="review" class="section-padding bd-bottom" data-scroll-index="8">
+        <!-- <section id="review" class="section-padding bd-bottom" data-scroll-index="8">
             <div class="container">
                 <div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
                     <h2 class="section-title">Clients Reviews</h2>
@@ -518,7 +505,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <!-- /.testimonial-section -->
         <!-- <section class="cta-section section-padding bd-bottom">
@@ -543,12 +530,14 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <form action="contact.php" method="post" id="ajax_form" class="row contact-form text-center">
+                        <form action="{{route('main.store')}}" method="post" class="row contact-form text-center">
+                            @csrf
+                            @method('post')
                             <div class="form-group col-lg-6">
-                                <input type="text" class="form-control" id="name" placeholder="Your name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
                             </div>
                             <div class="form-group col-lg-6">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                             </div>
                             <div class="form-group col-lg-12">
                                 <textarea class="form-control message" id="message" name="message" placeholder="Message" required></textarea>

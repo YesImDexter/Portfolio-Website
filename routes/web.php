@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\MainController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+// Route::post('/', function () {
+//     return view('index');
+// })->name('main');
+
 Route::get('/', function () {
     return view('index');
-});
+})->name('main.index');
+
+Route::post('/store', [MainController::class, 'store'])->name('main.store');
+
+// Route::resource('companies', MainController::class);
