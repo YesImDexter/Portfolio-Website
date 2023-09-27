@@ -23,5 +23,4 @@ Route::get('/', function () {
 })->name('main.index');
 
 Route::post('/store', [MainController::class, 'store'])->name('main.store');
-
 // Route::resource('companies', MainController::class);

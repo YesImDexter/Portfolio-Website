@@ -95,14 +95,14 @@
 
 
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
-                            <!-- <a href="img/RickRoll.mp4" class="my-video-links"> Presentation Video </a> -->
-                            <!-- <a class="my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a> -->
+                            <!-- <a class="my-video-links" href="img/RickRoll.mp4" Presentation Video></a> -->
+                            <a class="default-btn my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a>
 
                         </div>
                     </div>
                     <div class="col-md-5 sm-padding wow fadeInRight" data-wow-delay="200ms" data-wow-duration="1000ms">
                         <div class="about-bg">
-                            <img src="img/about-bg.jpg" alt="img">
+                            <img src="img/Me.jpg" alt="img">
                             <div class="dots"></div>
                         </div>
                     </div>
@@ -206,6 +206,14 @@
                                     <div class="progress">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 70%;">
                                             <span>70%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skill-item">
+                                    <h5>TypeScript</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 30%;">
+                                            <span>30%</span>
                                         </div>
                                     </div>
                                 </li>
@@ -430,7 +438,6 @@
         </section>
 
         <!-- Projects -->
-
         <section id="project" class="section-padding bd-bottom" data-scroll-index="7">
             <div class="container">
                 <div class="section-heading text-center mb-40 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
@@ -533,6 +540,7 @@
                         <form action="{{route('main.store')}}" method="post" class="row contact-form text-center">
                             @csrf
                             @method('post')
+
                             <div class="form-group col-lg-6">
                                 <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
                             </div>
