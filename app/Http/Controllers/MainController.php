@@ -9,9 +9,6 @@ class MainController extends Controller
 {
     public function index()
     {
-        $age = date("Y") - 2002;
-        $mydata = ['name' => 'Dexter Skudd Anak John Rizal', 'age'  => $age];
-
         return view('main.index');
     }
 
@@ -23,7 +20,10 @@ class MainController extends Controller
             'message' => ['required', 'string']
         ]);
 
-        Contact::create($request->post());
-        return redirect()->route('main.index')->with('success', 'Company has been created successfully.');
+        if (Contact::create($request->post())) {
+            return response()->json(['status' => true], 200);
+        } else {
+            return response()->json(['status' => false], 200);
+        }
     }
 }

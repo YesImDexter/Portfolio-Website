@@ -14,11 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::post('/', function () {
-//     return view('index');
-// })->name('main');
-
-Route::get('/', function () {
+Route::match(['get', 'post'], '/', function () {
     $age = date("Y") - 2002;
     $mydata = [
         'name' => 'Dexter Skudd Anak John Rizal',
@@ -33,4 +29,5 @@ Route::get('/', function () {
 })->name('main.index');
 
 Route::post('/store', [MainController::class, 'store'])->name('main.store');
+// Route::post('/store', MainController::class, 'store');
 // Route::resource('companies', MainController::class);

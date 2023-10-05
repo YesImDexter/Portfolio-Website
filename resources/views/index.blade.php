@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Explore my web programming portfolio showcasing a range of innovative projects and skills. Discover dynamic web development expertise and creative solutions.">
     <meta name="author" content="Dexter Skudd">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>Portfolio | Dexter Skudd</title>
 
@@ -69,9 +70,9 @@
                     <h2>I'm A <span class="typed"></span></h2>
 
                     <ul class="home-social">
-                        <li><a id="to-github"><i class="ti-github"></i></a></li>
-                        <li><a id="to-linkedin"><i class="ti-linkedin"></i></a></li>
-                        <li><a id="to-stack"><i class="ti-stack-overflow"></i></a></li>
+                        <li><a class="to-github"><i class="ti-github"></i></a></li>
+                        <li><a class="to-linkedin"><i class="ti-linkedin"></i></a></li>
+                        <li><a class="to-stack"><i class="ti-stack-overflow"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -480,60 +481,6 @@
             </div>
         </section>
 
-        <!-- review -->
-        <!-- <section id="review" class="section-padding bd-bottom" data-scroll-index="8">
-            <div class="container">
-                <div class="section-heading mb-40 text-center wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1000ms">
-                    <h2 class="section-title">Clients Reviews</h2>
-                </div>
-                <div id="testimonial-carousel" class="testimonial-carousel owl-carousel wow fadeInUp">
-                    <div class="testimonial-item">
-                        <div class="testimonial-innter">
-                            <div class="testi-thumb"><img src="img/testi-1.jpg" alt="img"></div>
-                            <div class="testi-content">
-                                <p>"I like men."</p>
-                                <h4>Syazwan Wan<span>Valorant.INC</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-innter">
-                            <div class="testi-thumb"><img src="img/testi-2.jpg" alt="img"></div>
-                            <div class="testi-content">
-                                <p>"Fast Shipping. 5 Stars."</p>
-                                <h4>Muhammad Firdaus Musa<span>HanyaKipas.com</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-item">
-                        <div class="testimonial-innter">
-                            <div class="testi-thumb"><img src="img/testi-3.jpg" alt="img"></div>
-                            <div class="testi-content">
-                                <p>"The daddiest stuff ever."</p>
-                                <h4>Martinus Njok <span>SapeBoiTines.com</span></h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-
-        <!-- /.testimonial-section -->
-        <!-- <section class="cta-section section-padding bd-bottom">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 xs-padding">
-                        <div class="cta-content">
-                            <h3>Need a Consultant for Your Business?</h3>
-                        </div>
-                    </div>
-                    <div class="col-md-6 text-right">
-                        <a href="#" class="default-btn">Hire Me Now!</a>
-                    </div>
-                </div>
-            </div>
-        </section>/.cta-section -->
-
         <section id="contact" class="section-padding section-padding" data-scroll-index="9">
             <div class="container">
                 <div class="section-heading mb-40 text-center" data-wow-delay="200ms" data-wow-duration="1000ms">
@@ -541,12 +488,9 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
-                        <form action="{{route('main.store')}}" method="post" class="row contact-form text-center">
-                            @csrf
-                            @method('post')
-
+                        <form id="form-data" class="row contact-form text-center">
                             <div class="form-group col-lg-6">
-                                <input type="text" class="form-control" id="name" placeholder="Your name" name="name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
                             </div>
                             <div class="form-group col-lg-6">
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
@@ -555,10 +499,7 @@
                                 <textarea class="form-control message" id="message" name="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="form-group col-lg-12">
-                                <button id="submit" class="default-btn" type="submit">Send Message</button>
-                            </div>
-                            <div id="form-messages" class="form-group col-lg-12">
-                                <div class="alert" role="alert"></div>
+                                <button id="submit-contact" class="default-btn">Send Message</button>
                             </div>
                         </form>
                     </div>
@@ -574,9 +515,9 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="footer-social text-right">
-                            <a id="to-github"><i class="ti-github"></i></a>
-                            <a id="to-linkedin"><i class="ti-linkedin"></i></a>
-                            <a id="to-stack"><i class="ti-stack-overflow"></i></a>
+                            <a class="to-github"><i class="ti-github"></i></a>
+                            <a class="to-linkedin"><i class="ti-linkedin"></i></a>
+                            <a class="to-stack"><i class="ti-stack-overflow"></i></a>
                         </div><!-- /.footer-social -->
                     </div>
                 </div>

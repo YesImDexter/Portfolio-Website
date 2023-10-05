@@ -1,37 +1,113 @@
 
 /*=========================================================================
+TEST AJAX
+=========================================================================*/
+
+document.getElementById('submit-contact').addEventListener('click', function (e) {
+    e.preventDefault();
+    var data = $('#form-data').serialize();
+    $.ajax({
+        type: 'post',
+        url: '/store',
+        headers: {
+            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+        },
+        data: data,
+        success: function (response) {
+            if (response.status == true) {
+                Swal.fire({
+                    color: '#999',
+                    title: 'Sucessfully Submitted',
+                    background: '#292929',
+                })
+                console.log(response.status);
+            } else if (response.status == false) {
+                Swal.fire({
+                    color: '#999',
+                    title: 'Failed To Be Submitted',
+                    background: '#292929',
+                })
+                console.log(response.status);
+            } else {
+                Swal.fire({
+                    color: '#999',
+                    title: 'Unknown Error',
+                    background: '#292929',
+                })
+                console.log(response.status);
+            }
+        },
+        error: function () {
+            Swal.fire({
+                color: '#999',
+                title: 'Unknown Error',
+                background: '#292929',
+            })
+        },
+    });
+});
+
+/*=========================================================================
 Event Listeners
 =========================================================================*/
 
 //EMAIL
 document.getElementById("copy-email").addEventListener("click", CopyEmail);
 
-document.getElementById("to-github").addEventListener("click", function () {
-    ToSocial("Github");
-});
-document.getElementById("to-linkedin").addEventListener("click", function () {
-    ToSocial("LinkedIn");
-});
-document.getElementById("to-stack").addEventListener("click", function () {
-    ToSocial("Stack");
-});
+const toGithub = document.getElementsByClassName("to-github");
+const toLinkedIn = document.getElementsByClassName("to-linkedin");
+const toStack = document.getElementsByClassName("to-stack");
 
 /*=========================================================================
 Social Links New Tab
 =========================================================================*/
 
-function ToSocial(target) {
-    if (target == "LinkedIn") {
-        var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
-    } else if (target == "Github") {
-        var link = "https://github.com/YesImDexter";
-    } else if (target == "Stack") {
-        var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
-    }
+toGithub[0].addEventListener('click', function onClick() {
+    var link = "https://github.com/YesImDexter";
+    ToSocial(link);
+});
 
-    var win = window.open(link, "_blank");
-    win.focus();
+for (const others of toGithub) {
+    others.addEventListener('click', function onClick() {
+        var link = "https://github.com/YesImDexter";
+        ToSocial(link);
+    });
 }
+
+// ====================================================================
+
+toLinkedIn[0].addEventListener('click', function onClick() {
+    var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
+    ToSocial(link);
+});
+
+for (const others of toLinkedIn) {
+    others.addEventListener('click', function onClick() {
+        var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
+        ToSocial(link);
+    });
+}
+
+// ====================================================================
+
+toStack[0].addEventListener('click', function onClick() {
+    var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
+    ToSocial(link);
+});
+
+for (const others of toStack) {
+    others.addEventListener('click', function onClick() {
+        var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
+        ToSocial(link);
+    });
+}
+
+// ====================================================================
+
+function ToSocial(link) {
+    window.open(link, "_blank");
+}
+
 
 /*=========================================================================
 Copy Email
@@ -43,7 +119,11 @@ function CopyEmail() {
     let email = "DexterS0202@gmail.com";
     const clipBoard = navigator.clipboard;
     if (clipBoard.writeText(email)) {
-        Swal.fire('Successfully Copied');
+        Swal.fire({
+            color: '#999',
+            title: 'Copied to Clipboard',
+            background: '#292929',
+        })
     } else {
         Swal.fire('Failed to Copy');
     }
