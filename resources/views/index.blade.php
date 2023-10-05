@@ -65,13 +65,13 @@
             <div class="container">
                 <div class="home-content text-center">
                     <h4>Hello! My name is</h4>
-                    <h1>Dexter Skudd</h1>
+                    <h1 class="home-name"> Dexter Skudd</h1>
                     <h2>I'm A <span class="typed"></span></h2>
 
                     <ul class="home-social">
-                        <li><a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a></li>
-                        <li><a onclick="ToSocial('Github')"><i class="ti-github"></i></a></li>
-                        <li><a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a></li>
+                        <li><a id="to-github"><i class="ti-github"></i></a></li>
+                        <li><a id="to-linkedin"><i class="ti-linkedin"></i></a></li>
+                        <li><a id="to-stack"><i class="ti-stack-overflow"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -85,13 +85,17 @@
                             <h2 class="section-title">Let Me Introduce Myself.</h2>
                             <p>Welcome to my portfolio website! I'm Dexter Skudd, a passionate programmer with a deep love for coding and a relentless curiosity for emerging web technologies. I thrive on the excitement of constantly learning and expanding my skill set. My journey in web development has led me to explore and master frameworks like Codeigniter 4 and Laravel, and I'm always eager to take on new challenges and push the boundaries of what's possible in the digital world.</p>
                             <ul class="profile-info">
-                                <li><span>Full Name</span> Dexter Skudd Anak John Rizal </li>
-                                <li><span>Nationality</span> Malaysian </li>
-                                <li><span>Location</span> Kuching, Sarawak </li>
-                                <li><span>Age</span> 21 </li>
-                                <li><span>Gender</span> Male </li>
-                                <li><span>Email</span> DexterS0202@gmail.com</li>
+                                <li><span>Full Name</span> {{$mydata['name']}}</li>
+                                <li><span>Nationality</span> {{$mydata['nationality']}}</li>
+                                <li><span>Location</span> {{$mydata['location']}}</li>
+                                <li><span>Age</span> {{$mydata['age']}}</li>
+                                <li><span>Gender</span> {{$mydata['gender']}}</li>
+                                <li><span>Email</span>
+                                    <div id="copy-email" class="copy-email">{{$mydata['email']}}<i class="ti-link ml-2"></i></div>
+                                </li>
                             </ul>
+
+
 
 
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
@@ -570,9 +574,9 @@
                     </div>
                     <div class="col-sm-6">
                         <div class="footer-social text-right">
-                            <a onclick="ToSocial('LinkedIn')"><i class="ti-linkedin"></i></a>
-                            <a onclick="ToSocial('Github')"><i class="ti-github"></i></a>
-                            <a onclick="ToSocial('Stack')"><i class="ti-stack-overflow"></i></a>
+                            <a id="to-github"><i class="ti-github"></i></a>
+                            <a id="to-linkedin"><i class="ti-linkedin"></i></a>
+                            <a id="to-stack"><i class="ti-stack-overflow"></i></a>
                         </div><!-- /.footer-social -->
                     </div>
                 </div>
@@ -596,6 +600,7 @@
     <script type="text/javascript" src="{{ URL::asset('js/vendor/typed.min.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/bootstrap-menu.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/vendor/wow.min.js'); }}"></script>
+    <script type="text/javascript" src="{{ URL::asset('js/vendor/swal2.js'); }}"></script>
     <script type="text/javascript" src="{{ URL::asset('js/contact.js'); }}"></script>
 
 </body>

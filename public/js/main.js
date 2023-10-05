@@ -1,18 +1,52 @@
+
+/*=========================================================================
+Event Listeners
+=========================================================================*/
+
+//EMAIL
+document.getElementById("copy-email").addEventListener("click", CopyEmail);
+
+document.getElementById("to-github").addEventListener("click", function () {
+    ToSocial("Github");
+});
+document.getElementById("to-linkedin").addEventListener("click", function () {
+    ToSocial("LinkedIn");
+});
+document.getElementById("to-stack").addEventListener("click", function () {
+    ToSocial("Stack");
+});
+
 /*=========================================================================
 Social Links New Tab
 =========================================================================*/
 
 function ToSocial(target) {
-    if (target == "Github") {
-        var link = "https://github.com/YesImDexter";
-    } else if (target == "LinkedIn") {
+    if (target == "LinkedIn") {
         var link = "https://www.linkedin.com/in/dexter-skudd-607b58253/";
+    } else if (target == "Github") {
+        var link = "https://github.com/YesImDexter";
     } else if (target == "Stack") {
         var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
     }
 
     var win = window.open(link, "_blank");
     win.focus();
+}
+
+/*=========================================================================
+Copy Email
+=========================================================================*/
+
+function CopyEmail() {
+
+    // Copy the text inside the text field
+    let email = "DexterS0202@gmail.com";
+    const clipBoard = navigator.clipboard;
+    if (clipBoard.writeText(email)) {
+        Swal.fire('Successfully Copied');
+    } else {
+        Swal.fire('Failed to Copy');
+    }
 }
 
 $(function () {

@@ -14,7 +14,6 @@
     outline: none;
     list-style: none;
     word-wrap: break-word;
-
 }
 
 body {
@@ -389,6 +388,10 @@ h6 {
     position: relative;
 }
 
+.home-name {
+    letter-spacing: 2px;
+}
+
 .home-content h4 {
     font-size: 30px;
 }
@@ -461,6 +464,16 @@ h6 {
 
 .profile-info {
     margin-bottom: 30px;
+}
+
+.copy-email {
+    display: inline-block;
+    transition: color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.copy-email:hover {
+    color: #22a39f;
 }
 
 .profile-info li {

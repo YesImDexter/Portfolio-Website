@@ -9,6 +9,9 @@ class MainController extends Controller
 {
     public function index()
     {
+        $age = date("Y") - 2002;
+        $mydata = ['name' => 'Dexter Skudd Anak John Rizal', 'age'  => $age];
+
         return view('main.index');
     }
 
