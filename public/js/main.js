@@ -5,39 +5,35 @@ TEST AJAX
 
 document.getElementById('submit-contact').addEventListener('click', function (e) {
     e.preventDefault();
-    var data = $('#form-data').serialize();
+    // var data = $('#form-data').serialize();
     $.ajax({
         type: 'post',
         url: '/store',
         headers: {
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         },
-        data: data,
+        data: {
+            name: $('#name').val(),
+            email: $('#email').val(),
+            message: $('#message').val()
+        },
         success: function (response) {
-            if (response.status == true) {
+            if (response.status === true) {
                 Swal.fire({
                     color: '#999',
                     title: 'Sucessfully Submitted',
                     background: '#292929',
                 })
-                console.log(response.status);
-            } else if (response.status == false) {
+            } else if (response.status === false) {
                 Swal.fire({
                     color: '#999',
                     title: 'Failed To Be Submitted',
                     background: '#292929',
                 })
-                console.log(response.status);
-            } else {
-                Swal.fire({
-                    color: '#999',
-                    title: 'Unknown Error',
-                    background: '#292929',
-                })
-                console.log(response.status);
             }
+            console.log(response)
         },
-        error: function () {
+        error: function (response) {
             Swal.fire({
                 color: '#999',
                 title: 'Unknown Error',

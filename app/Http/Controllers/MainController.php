@@ -14,16 +14,18 @@ class MainController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
+
+        $validate = $request->validate([
             'name' => ['required', 'string'],
             'email' => ['required', 'email'],
             'message' => ['required', 'string']
         ]);
 
-        if (Contact::create($request->post())) {
-            return response()->json(['status' => true], 200);
+        if ($validate) {
+            Contact::create($request->post());
+            return response()->json(['status' => true, 'request' => $validate]);
         } else {
-            return response()->json(['status' => false], 200);
+            return response()->json(['status' => false, 'error' => 'Unknown Error']);
         }
     }
 }

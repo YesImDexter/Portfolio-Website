@@ -661,15 +661,16 @@ h6 {
 
 .services-item {
     padding: 40px;
+    margin: 10px 0;
     background-color: transparent;
-    top: 0;
+    cursor: pointer;
     transition: all 0.7s ease-in-out;
-    cursor: default;
+    background-color: #222;
+    border-radius: 20px;
+    min-height: 350px;
 }
 
 .services-item:hover {
-    background-color: #222;
-    top: -20px;
     transition: all 0.7s ease-in-out;
 }
 
@@ -1069,6 +1070,10 @@ footer p a {
         padding-left: 30px;
         padding-right: 30px;
     }
+
+    .services-item {
+        min-height: 390px;
+    }
 }
 
 @media screen and (max-width: 1199px) {
@@ -1078,6 +1083,10 @@ footer p a {
 
     #primary-navigation {
         display: none;
+    }
+
+    .services-item {
+        min-height: 400px;
     }
 
     .dl-side-content>.logo h1 {
@@ -1122,6 +1131,11 @@ footer p a {
     .services .feat-item.active .text-center {
         padding-top: 50px;
         margin-top: 0;
+    }
+
+    .services-item {
+        margin: 0 5px;
+        min-height: 420px;
     }
 
     .about .tab-content .image {
@@ -1215,6 +1229,10 @@ footer p a {
     .footer-social {
         text-align: center !important;
         margin-top: 14px;
+    }
+
+    .services-item {
+        min-height: auto;
     }
 
     .footer-social a {

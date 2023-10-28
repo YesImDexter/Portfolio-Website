@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Explore my web programming portfolio showcasing a range of innovative projects and skills. Discover dynamic web development expertise and creative solutions.">
@@ -131,7 +131,20 @@
                                 <div class="exp-logo"> <img src="img/icon-poli.png"> </div>
                                 <div class="exp-content">
                                     <h4>Politeknik Kuching Sarawak. <span>Diploma in Information Technology </span></h4>
-                                    <p>Politeknik Kuching Sark holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
+                                    <p>Politeknik Kuching Sarawak holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="exp-list">
+                            <li>
+                                <div class="exp-date">
+                                    <i class="ti-bookmark-alt"></i>
+                                    <span>September 2023 - Current</span>
+                                </div>
+                                <div class="exp-logo"> <img src="img/icon-unimas.png"> </div>
+                                <div class="exp-content">
+                                    <h4>University Malaysia Sarawak. <span> Bachelor of Software Engineering</span></h4>
+                                    <p>My time at UNIMAS allowed me to not only acquire fundamental knowledge but also delve deep into the world of programming, development methodologies, and software design principles. I actively sought out opportunities to stay updated with current trends, ensuring that my skills remained relevant in a rapidly evolving tech landscape.</p>
                                 </div>
                             </li>
                         </ul>
@@ -488,6 +501,17 @@
                 </div>
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
+
+                        @if ($errors->any())
+                        <div class="alert alert-danger" role="alert">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                        @endif
+
                         <form id="form-data" class="row contact-form text-center">
                             <div class="form-group col-lg-6">
                                 <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
