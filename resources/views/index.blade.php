@@ -96,9 +96,6 @@
                                 </li>
                             </ul>
 
-
-
-
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
                             <!-- <a class="my-video-links" href="img/RickRoll.mp4" Presentation Video></a> -->
                             <a class="default-btn my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a>
@@ -514,13 +511,13 @@
 
                         <form id="form-data" class="row contact-form text-center">
                             <div class="form-group col-lg-6">
-                                <input type="text" class="form-control" id="name" placeholder="Your Name" name="name" required>
+                                <input type="text" class="form-control input-custom" id="name" placeholder="Your Name" name="name" required>
                             </div>
                             <div class="form-group col-lg-6">
-                                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+                                <input type="email" class="form-control input-custom" id="email" placeholder="Enter email" name="email" required>
                             </div>
                             <div class="form-group col-lg-12">
-                                <textarea class="form-control message" id="message" name="message" placeholder="Message" required></textarea>
+                                <textarea class="form-control message input-custom" id="message" name="message" placeholder="Message" required></textarea>
                             </div>
                             <div class="form-group col-lg-12">
                                 <button id="submit-contact" class="default-btn">Send Message</button>

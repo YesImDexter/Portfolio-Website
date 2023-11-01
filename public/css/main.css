@@ -461,6 +461,7 @@ h6 {
 
 .about-bg img {
     width: 100%;
+    border-radius: 20px;
 }
 
 .about-bg {
@@ -791,6 +792,11 @@ h6 {
 
 /* =======  Portfolio Filter Styles  ======= */
 
+
+.portfolio-box{
+    border-radius: 20px !important;
+}
+
 .portfolio-filter {
     display: block;
 }
@@ -918,6 +924,10 @@ h6 {
 
 .contact-form {}
 
+.input-custom{
+    border-radius: 10px !important;
+}
+
 .contact-form .form-group {
     margin-bottom: 30px;
 }
@@ -965,6 +975,7 @@ h6 {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
     background-color: #22a39f;
+    border-radius: 5px !important;
     color: #fff;
     line-height: 45px;
     display: inline-block;
