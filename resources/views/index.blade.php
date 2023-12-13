@@ -8,7 +8,9 @@
     <meta name="author" content="Dexter Skudd">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Portfolio | Dexter Skudd</title>
+    <title>Hire Me | Dexter Skudd</title>
+
+    <!-- const apiKey = "5b6ddf2fc7a4a520ef84c3317aaf5e1c" -->
 
     <link rel="shortcut icon" type="image/x-icon" href="{{ URL::asset('img/favicon.png'); }}" />
 
@@ -462,27 +464,58 @@
                 <div class="portfolio-wrapper">
                     <ul class="portfolio-filter text-center mb-30 wow fadeInUp">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".website">Website</li>
-                        <li data-filter=".mobile">Mobile</li>
+                        <li data-filter=".react">React</li>
+                        <li data-filter=".laravel">Laravel</li>
+                        <li data-filter=".codeigniter">CodeIgniter 4</li>
+                        <li data-filter=".api">API</li>
+                        <li data-filter=".java">Javascript</li>
+                        <li data-filter=".php">PHP</li>
                     </ul>
 
                     <!-- Portfolio Filter -->
 
                     <div class="row portfolio-items">
-                        <div class="col-md-4 col-sm-6 padding-10 single-item website wow fadeInUp">
+                        <div class="col-md-4 col-sm-6 padding-10 single-item php wow fadeInUp">
                             <div class="portfolio-box">
                                 <img src="img/Poliku-Eshop.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="pop-up" href="img/poliku-eshop-open.png" title="Poliku Eshop By Dexter Skudd">Poliku Eshop<span>Personal Project</span></a></h3>
+                                    <h3><a class="pop-up" href="img/poliku-eshop-open.png" title="Poliku Eshop By Dexter Skudd">Poliku Eshop<span>Final Year Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 padding-10 single-item website wow fadeInUp">
+                        <div class="col-md-4 col-sm-6 padding-10 single-item codeigniter java wow fadeInUp">
                             <div class="portfolio-box">
                                 <img src="img/Directory-System.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a class="pop-up" href="img/Directory-System.png" title="Directory System By Dexter Skudd">Directory System<span>Personal Project</span></a></h3>
+                                    <h3><a class="pop-up" href="img/Directory-System.png" title="Directory System By Dexter Skudd">Directory System<span>Internship Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item java wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/Typing-Test.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://yesimdexter.github.io/Typing-Website/" target="_blank" title="Typing Test By Dexter Skudd">Typing Test<span>Personal Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item api java wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/WeatherAPI.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://yesimdexter.github.io/WeatherApi-App/" target="_blank" title="WeatheAPI By Dexter Skudd">WeatherAPI App<span>Personal Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel PHP java wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/Portfolio.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://portfolio.dexterskudd.com/" target="_blank" title="Portfolio By Dexter Skudd">Portfolio Website<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
