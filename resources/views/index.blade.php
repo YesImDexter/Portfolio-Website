@@ -127,7 +127,7 @@
                                 </div>
                                 <div class="exp-logo"> <img src="img/icon-poli.png"> </div>
                                 <div class="exp-content">
-                                    <h4>Politeknik Kuching Sarawak. <span>Diploma in Information Technology </span></h4>
+                                    <h4>Politeknik Kuching Sarawak. <span>Diploma in Digital Technology </span></h4>
                                     <p>Politeknik Kuching Sarawak holds a special place in my educational journey. It was here that I completed my diploma, and it was during this time that my passion for programming and web design truly ignited. This esteemed institution not only equipped me with the fundamental knowledge and skills in my field but also fostered a desire within me to dive deeper into the world of programming.</p>
                                 </div>
                             </li>
