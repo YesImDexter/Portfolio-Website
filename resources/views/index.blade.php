@@ -100,7 +100,7 @@
 
                             <!-- <a href="#" class="default-btn">Download CV<i class="ti-download"></i></a> -->
                             <!-- <a class="my-video-links" href="img/RickRoll.mp4" Presentation Video></a> -->
-                            <a class="default-btn my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a>
+                            <!-- <a class="default-btn my-video-links" data-autoplay="true" data-vbtype="video" href="img/RickRoll.mp4"> Presentation Video </a> -->
 
                         </div>
                     </div>
@@ -229,8 +229,8 @@
                                 <li class="skill-item">
                                     <h5>TypeScript</h5>
                                     <div class="progress">
-                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 30%;">
-                                            <span>30%</span>
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="300ms" data-wow-duration="2000ms" role="progressbar" style="width: 15%;">
+                                            <span>15%</span>
                                         </div>
                                     </div>
                                 </li>
