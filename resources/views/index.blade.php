@@ -495,7 +495,7 @@
 
                         <div class="col-md-4 col-sm-6 padding-10 single-item java wow fadeInUp">
                             <div class="portfolio-box">
-                                <img src="img/Typing-Test.png" alt="img">
+                                <img src="img/TypingTestIMG.png" alt="img">
                                 <div class="portfolio-content">
                                     <h3><a href="https://yesimdexter.github.io/Typing-Website/" target="_blank" title="Typing Test By Dexter Skudd">Typing Test<span>Personal Project</span></a></h3>
                                 </div>
@@ -504,9 +504,9 @@
 
                         <div class="col-md-4 col-sm-6 padding-10 single-item api java wow fadeInUp">
                             <div class="portfolio-box">
-                                <img src="img/WeatherAPI.png" alt="img">
+                                <img src="img/WeatherAPIIMG.png" alt="img">
                                 <div class="portfolio-content">
-                                    <h3><a href="https://yesimdexter.github.io/WeatherApi-App/" target="_blank" title="WeatheAPI By Dexter Skudd">WeatherAPI App<span>Personal Project</span></a></h3>
+                                    <h3><a href="https://yesimdexter.github.io/Weather-App/" target="_blank" title="WeatheAPI By Dexter Skudd">WeatherAPI App<span>Personal Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
