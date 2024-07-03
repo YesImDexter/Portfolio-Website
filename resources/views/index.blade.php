@@ -551,7 +551,7 @@
 
                         <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
                             <div class="portfolio-box">
-                                <img src="img/Kucharge.png" alt="img">
+                                <img src="img/Kucharge1.png" alt="img">
                                 <div class="portfolio-content">
                                     <h3><a href="https://kucharge.app/" target="_blank" title="KuCharge">KuCharge<span>Freelance Project</span></a></h3>
                                 </div>
