@@ -75,6 +75,7 @@
                         <li><a class="to-github"><i class="ti-github"></i></a></li>
                         <li><a class="to-linkedin"><i class="ti-linkedin"></i></a></li>
                         <li><a class="to-stack"><i class="ti-stack-overflow"></i></a></li>
+                        <li><a class="to-instagram"><i class="ti-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -147,7 +148,8 @@
                                 </div>
                             </li>
                         </ul>
-                    </section><!-- /.Education-section -->
+                    </section>
+                    <!-- /.Education-section -->
                 </div>
 
                 <div id="experience" class="col-md-6 sm-padding wow fadeInLeft" data-wow-delay="200ms" data-wow-duration="1000ms" data-scroll-index="3">
@@ -170,11 +172,22 @@
                             <li>
                                 <div class="exp-date">
                                     <i class="ti-briefcase"></i>
-                                    <span>June 2023 - Current</span>
+                                    <span>June 2023 - August 2023</span>
                                 </div>
                                 <div class="exp-content">
                                     <h4>Self-Employed. <span>Freelancer</span></h4>
-                                    <p>Currently, I am freelancing while dedicating my free time to exploring cutting-edge frameworks and web technologies. This dual focus allows me to apply my skills in real-world projects while staying at the forefront of the ever-evolving web development landscape.</p>
+                                    <p>Freelancing while dedicating my free time to exploring cutting-edge frameworks and web technologies. This dual focus allows me to apply my skills in real-world projects while staying at the forefront of the ever-evolving web development landscape. Additionally, I am passionate about videography and video editing, often capturing and enhancing footage for various events and occasions.</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="exp-date">
+                                    <i class="ti-briefcase"></i>
+                                    <span>March 2024 - Current</span>
+                                </div>
+                                <div class="exp-logo"> <img src="img/icon-se.png"> </div>
+                                <div class="exp-content">
+                                    <h4>Stratetics Experts. <span>Web Developer Freelancer</span></h4>
+                                    <p>In my freelance role, I've developed two projects, KuCharge and RentNGo, using Laravel. My work includes creating APIs, implementing Tailwind for responsive design, and managing NPM for package installations. I also handle deployment, ensuring efficient website launches. This has honed my full-stack development skills, emphasizing backend and frontend proficiency.</p>
                                 </div>
                             </li>
                         </ul>
@@ -198,6 +211,14 @@
                                     <h5>HTML</h5>
                                     <div class="progress">
                                         <div class="progress-bar wow slideInLeft" data-wow-delay="0ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
+                                            <span>90%</span>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="skill-item">
+                                    <h5>TAILWIND</h5>
+                                    <div class="progress">
+                                        <div class="progress-bar wow slideInLeft" data-wow-delay="200ms" data-wow-duration="2000ms" role="progressbar" style="width: 90%;">
                                             <span>90%</span>
                                         </div>
                                     </div>
@@ -464,18 +485,17 @@
                 <div class="portfolio-wrapper">
                     <ul class="portfolio-filter text-center mb-30 wow fadeInUp">
                         <li class="active" data-filter="*">All</li>
-                        <li data-filter=".react">React</li>
                         <li data-filter=".laravel">Laravel</li>
                         <li data-filter=".codeigniter">CodeIgniter 4</li>
                         <li data-filter=".api">API</li>
-                        <li data-filter=".java">Javascript</li>
-                        <li data-filter=".php">PHP</li>
+                        <li data-filter=".tailwind">Tailwind</li>
+                        <li data-filter=".others">Others</li>
                     </ul>
 
                     <!-- Portfolio Filter -->
 
                     <div class="row portfolio-items">
-                        <div class="col-md-4 col-sm-6 padding-10 single-item php wow fadeInUp">
+                        <div class="col-md-4 col-sm-6 padding-10 single-item others wow fadeInUp">
                             <div class="portfolio-box">
                                 <img src="img/Poliku-Eshop.png" alt="img">
                                 <div class="portfolio-content">
@@ -511,11 +531,47 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel PHP java wow fadeInUp">
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel wow fadeInUp">
                             <div class="portfolio-box">
                                 <img src="img/Portfolio.png" alt="img">
                                 <div class="portfolio-content">
                                     <h3><a href="https://portfolio.dexterskudd.com/" target="_blank" title="Portfolio By Dexter Skudd">Portfolio Website<span>Personal Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/SpotifyPay.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://spotified.dexterskudd.com/" target="_blank" title="Spotify App">Spotify Pay System<span>Personal Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/Kucharge.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://kucharge.app/" target="_blank" title="KuCharge">KuCharge<span>Freelance Project</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item others wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/Mayday.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://mayday.dexterskudd.com/" target="_blank" title="Mayday">Mayday<span>Startup Competition</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/RentNGo.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://rng.my/" target="_blank" title="KuCharge">Rent and Go <span>Freelance Project</span></a></h3>
                                 </div>
                             </div>
                         </div>

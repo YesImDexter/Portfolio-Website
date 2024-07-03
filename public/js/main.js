@@ -53,6 +53,7 @@ document.getElementById("copy-email").addEventListener("click", CopyEmail);
 const toGithub = document.getElementsByClassName("to-github");
 const toLinkedIn = document.getElementsByClassName("to-linkedin");
 const toStack = document.getElementsByClassName("to-stack");
+const toIG = document.getElementsByClassName("to-instagram");
 
 /*=========================================================================
 Social Links New Tab
@@ -94,6 +95,20 @@ toStack[0].addEventListener('click', function onClick() {
 for (const others of toStack) {
     others.addEventListener('click', function onClick() {
         var link = "https://stackoverflow.com/users/20278424/dexter-skudd";
+        ToSocial(link);
+    });
+}
+
+// ====================================================================
+
+toIG[0].addEventListener('click', function onClick() {
+    var link = "https://www.instagram.com/dex.skd?igsh=MmZoOGJtZmxja2E2&utm_source=qr";
+    ToSocial(link);
+});
+
+for (const others of toIG) {
+    others.addEventListener('click', function onClick() {
+        var link = "https://www.instagram.com/dex.skd?igsh=MmZoOGJtZmxja2E2&utm_source=qr";
         ToSocial(link);
     });
 }
