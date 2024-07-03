@@ -549,20 +549,20 @@
                             </div>
                         </div>
 
-                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
-                            <div class="portfolio-box">
-                                <img src="img/Kucharge1.png" alt="img">
-                                <div class="portfolio-content">
-                                    <h3><a href="https://kucharge.app/" target="_blank" title="KuCharge">KuCharge<span>Freelance Project</span></a></h3>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="col-md-4 col-sm-6 padding-10 single-item others wow fadeInUp">
                             <div class="portfolio-box">
                                 <img src="img/Mayday.png" alt="img">
                                 <div class="portfolio-content">
                                     <h3><a href="https://mayday.dexterskudd.com/" target="_blank" title="Mayday">Mayday<span>Startup Competition</span></a></h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6 padding-10 single-item laravel tailwind wow fadeInUp">
+                            <div class="portfolio-box">
+                                <img src="img/KuchargeEVE.png" alt="img">
+                                <div class="portfolio-content">
+                                    <h3><a href="https://kucharge.app/" target="_blank" title="KuCharge">KuCharge<span>Freelance Project</span></a></h3>
                                 </div>
                             </div>
                         </div>
